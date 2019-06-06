@@ -45,6 +45,7 @@ export function createMiddleware(options: ModuleOptions) {
         return
       })
     } catch (e) {
+      console.error(e)
       res.writeHead(500, { 'Content-Type': 'text/html' })
       res.write(`<html><body>500 Internal server errror </body></html>`, () => {
         res.end()
