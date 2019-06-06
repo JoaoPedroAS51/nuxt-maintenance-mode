@@ -1,3 +1,2 @@
 .nuxt/
-lib/**/*.js
 node_modules
